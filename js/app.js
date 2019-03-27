@@ -3,7 +3,7 @@
 //Q1
 var userName = prompt('What is your name?');
 alert('Hi, ' + userName + ', great to meet you!!!. Lets play a guessing game..');
-console.log('When asked their name, the user responded: ' + userName);   
+console.log('When asked their name, the user responded: ' + userName);
 
 var nameResult = 'Great to meet you ' + userName.toUpperCase() ;
 document.getElementById('output1').innerHTML = nameResult;
@@ -23,7 +23,7 @@ else if (uppercaseSports === 'N' || uppercaseSports ==='NO'){
   document.getElementById('output2').innerHTML = resultSports;
 }
 else{
-  alert ('please refresh and type yes/y or no/n')
+  alert ('please refresh and type yes/y or no/n');
 }
 console.log('When asked if they play sports user responded ' + uppercaseSports);
 
@@ -77,7 +77,7 @@ if(uppercaseMusic === 'Y' || uppercaseMusic ==='YES'){
 else if (uppercaseMusic === 'N' || uppercaseMusic === 'NO'){
   alert ('Uhm...');
   resultMusic = 'I like pop music.';
-  document.getElementById(' output5').innerHTML = resultMusic;
+  document.getElementById('output5').innerHTML = resultMusic;
 }
 else{
   alert ('please refresh and type yes/y or no/n');

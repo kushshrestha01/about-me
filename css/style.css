@@ -1,13 +1,27 @@
 
-h1 {color: rgb(77, 8, 8);} 
+h1 {
+  color: rgb(77, 8, 8);
+} 
+
 body {
-      background-color:rgb(92, 127, 234);
-      }
-h4 {border-style: solid; border-top-left-radius: 10px; border-top-right-radius: 10px; text-align: center; padding: 10px; border-width:1px 4px 12px 4px; color:rgb(60, 33, 24);
-      }   
-p{
-  background:rgb(19, 102, 37);color:white;
+  background-color:rgb(92, 127, 234);
 }
-p1{
-  background:rgb(178, 214, 78);color:rgb(31, 5, 5);
+
+h4 {
+  border-style: solid; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  text-align: center; padding: 10px; 
+  border-width:1px 4px 12px 4px; 
+  color:rgb(60, 33, 24);
+}   
+
+p {
+  background:rgb(19, 102, 37);
+  color:white;
+}
+
+p.first {
+  background:rgb(178, 214, 78);
+  color:rgb(31, 5, 5);
 }
