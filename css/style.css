@@ -8,20 +8,32 @@ body {
 }
 
 h4 {
+  bottom: 0;
   border-style: solid; 
   border-top-left-radius: 10px; 
   border-top-right-radius: 10px; 
-  text-align: center; padding: 10px; 
+  text-align: center; 
+  padding: 10px; 
   border-width:1px 4px 12px 4px; 
   color:rgb(60, 33, 24);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }   
 
-p {
+h5 {
+  border-style: solid;  
+  font-size: 20px; 
+  color:rgb(123,40, 63);
+}   
+
+ul {
   background:rgb(19, 102, 37);
   color:white;
 }
 
 p.first {
-  background:rgb(178, 214, 78);
+  background:rgb(69, 92, 6);
   color:rgb(31, 5, 5);
 }
