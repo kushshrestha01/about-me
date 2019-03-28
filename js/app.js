@@ -4,7 +4,7 @@ var d = new Date();
 document.getElementById('date').innerHTML = d;
 
 var correctAnswer = 0;
-var totalQuestions = 5;
+var totalQuestions = 7;
 
 //User Name
 var userName = prompt('What is your name?');
@@ -121,6 +121,7 @@ var i = 0;
 for(i = 0; i<5; i++){
   if (guessNumber === '3'){
     alert ('You are right');
+    correctAnswer++;
     break;
   }
   else if (guessNumber>3){
@@ -145,6 +146,7 @@ for(var j = 0; j < 5; j++){
   if (livedStates.includes(uppercaseState)){
     alert ('You are right. I have lived in Texas, Minnesota, Indiana, Hawaii.');
     console.log(uppercaseState);
+    correctAnswer++;
     break;
   }
   else{
