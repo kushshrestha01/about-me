@@ -33,7 +33,7 @@ function playYesNoGame() {
     while (!validResponses.includes(answer)) {
       alert ('please type yes or no');
       answer = prompt(allQuestions[i]).toUpperCase();
-    } 
+    }
 
     //if answer is correct  alert correct or not, and add 1 to correct answer
     if (answer === allCorrectAnswers[i]) {
@@ -65,46 +65,56 @@ document.getElementById('output1').innerHTML = nameResult;
 playYesNoGame();
 
 //Q6
-var guessNumber;
-guessNumber = prompt ('Guess my favorite number');
+function guessANumberGame() {
+  var guessNumber;
+  guessNumber = prompt ('Guess my favorite number');
 
-var i = 0;
-for(i = 0; i<5; i++){
-  if (guessNumber === '3'){
-    alert ('You are right');
-    correctAnswer++;
-    break;
-  }
-  else if (guessNumber>3){
-    alert ('guess lower');
-    guessNumber = prompt ('Guess my favorite number');
-  }
-  else if (guessNumber<3){
-    alert ('guess higher');
-    guessNumber = prompt ('Guess my favorite number');
+  var i = 0;
+  for(i = 0; i<5; i++){
+    if (guessNumber === '3'){
+      alert ('You are right');
+      correctAnswer++;
+      break;
+    }
+    else if (guessNumber>3){
+      alert ('guess lower');
+      guessNumber = prompt ('Guess my favorite number');
+    }
+    else if (guessNumber<3){
+      alert ('guess higher');
+      guessNumber = prompt ('Guess my favorite number');
+    }
   }
 }
+
+guessANumberGame();
 
 //Q7
-var livedStates = ['TEXAS','MINESOTTA','INDIANA','HAWAII'];
-var guessState;
-var uppercaseState;
-for(var j = 0; j < 5; j++){
-  guessState = prompt('Can you guess a state that I have lived in besides Washington?');
-  uppercaseState = guessState.toUpperCase();
-  console.log(livedStates.includes(uppercaseState));
+function guessAStateGame() {
+  var livedStates = ['TEXAS','MINESOTTA','INDIANA','HAWAII'];
+  var guessState;
+  var uppercaseState;
+  for(var j = 0; j < 5; j++){
+    guessState = prompt('Can you guess a state that I have lived in besides Washington?');
+    uppercaseState = guessState.toUpperCase();
+    console.log(livedStates.includes(uppercaseState));
 
-  if (livedStates.includes(uppercaseState)){
-    alert ('You are right. I have lived in Texas, Minnesota, Indiana, Hawaii.');
-    console.log(uppercaseState);
-    correctAnswer++;
-    break;
-  }
-  else{
-    alert ('try again');
+    if (livedStates.includes(uppercaseState)){
+      alert ('You are right. I have lived in Texas, Minnesota, Indiana, Hawaii.');
+      console.log(uppercaseState);
+      correctAnswer++;
+      break;
+    }
+    else{
+      alert ('try again');
+    }
   }
 }
+guessAStateGame();
 
 //Quiz Results
-var totalResults = 'You got ' + correctAnswer + ' correct out of ' + totalQuestions + '.';
-document.getElementById('output7').innerHTML = totalResults;
+function quizResults() {
+  var totalResults = 'You got ' + correctAnswer + ' correct out of ' + totalQuestions + '.';
+  document.getElementById('output7').innerHTML = totalResults;
+}
+quizResults();
