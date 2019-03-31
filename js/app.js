@@ -91,7 +91,7 @@ guessANumberGame();
 
 //Q7
 function guessAStateGame() {
-  var livedStates = ['TEXAS','MINESOTTA','INDIANA','HAWAII'];
+  var livedStates = ['TEXAS','MINNESOTA','INDIANA','HAWAII'];
   var guessState;
   var uppercaseState;
   for(var j = 0; j < 5; j++){

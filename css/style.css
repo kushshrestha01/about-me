@@ -1,10 +1,28 @@
 
 h1 {
   color: rgb(77, 8, 8);
+  text-align: center; 
+  /*left: 0;
+  bottom: 0;
+  width: 100%;*/
 } 
 
+h2 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
 body {
-  background-color:rgb(92, 127, 234);
+  /*background-color:rgb(92, 127, 234);*/
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/02/14/26/winter-landscape-2571788_1280.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3{
+  background:#d2a3a3; 
+  color: rgb(11, 80, 216);
 }
 
 h4 {
@@ -16,10 +34,6 @@ h4 {
   padding: 10px; 
   border-width:1px 4px 12px 4px; 
   color:rgb(60, 33, 24);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }   
 
 h5 {
@@ -28,9 +42,8 @@ h5 {
   color:rgb(123,40, 63);
 }   
 
-ul {
-  background:rgb(19, 102, 37);
-  color:white;
+# {
+  color:rgb(54, 44, 194);
 }
 
 #first {
