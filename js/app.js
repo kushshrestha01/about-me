@@ -20,7 +20,7 @@ function playYesNoGame() {
 
   var outputForIncorrectAnswers = ['I like sports. Sports are fun, you should try it',
     'I like to travel, it can be fun',
-    'I enjoy horror movies, but it is not for everybody',
+    'I do not enjoy horror movies, it is not for everybody',
     'I like pop music.',
     'I love dogs and cats'
   ];
