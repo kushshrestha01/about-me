@@ -12,7 +12,7 @@ h2 {
 }
 
 body {
-  background-image: url('https://cdn.pixabay.com/photo/2017/08/02/14/26/winter-landscape-2571788_1280.jpg'); 
+  background-image: url("../image/winter-landscape-2571788_1280.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
 }
